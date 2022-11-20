@@ -1,5 +1,5 @@
 //FizzBuzz coding interview question in Kotlin
-//Freya-The-Goddess
+//by Freya-The-Goddess
 
 fun main() {
     val fizz: Int = 3
