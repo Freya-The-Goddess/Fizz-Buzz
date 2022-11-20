@@ -1,4 +1,4 @@
-//FizzBuzz coding interview question in Kotlin
+//FizzBuzz coding interview question in JavaScript
 //by Freya-The-Goddess
 
 function main() {
