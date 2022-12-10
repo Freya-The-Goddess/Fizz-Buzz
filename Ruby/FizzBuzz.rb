@@ -6,15 +6,9 @@ buzz = 5
 endNumber = 100
 
 for i in 1..endNumber do
-    if i % fizz == 0 and i % buzz == 0
-        output = "FizzBuzz"
-    elsif i % fizz == 0
-        output = "Fizz"
-    elsif i % buzz == 0
-        output = "Buzz"
-    else
-        output = i
-    end
-
+    output = ""
+    output += "Fizz" if i % fizz == 0
+    output += "Buzz" if i % buzz == 0
+    output = i.to_s if output.empty?
     puts output
 end
