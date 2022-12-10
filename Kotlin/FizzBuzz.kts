@@ -6,14 +6,9 @@ val buzz: Int = 5
 val endNumber: Int = 100
 
 for (i in 1..endNumber) {
-    val output = if (i % fizz == 0 && i % buzz == 0) {
-        "FizzBuzz"
-    } else if (i % fizz == 0) {
-        "Fizz"
-    } else if (i % buzz == 0) {
-        "Buzz"
-    } else {
-        i.toString()
-    }
+    var output = ""
+    if (i % fizz == 0) output += "Fizz"
+    if (i % buzz == 0) output += "Buzz"
+    if (output.isEmpty()) output = i.toString()
     println(output)
 }
